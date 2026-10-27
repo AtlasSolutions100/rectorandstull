@@ -289,17 +289,17 @@ html.intro-on body { overflow: hidden; }
 html.intro-on .intro { display: grid; position: fixed; inset: 0; z-index: 200; background: radial-gradient(ellipse at 50% 42%, #01132F 0%, #01112B 38%, #000818 100%); place-items: center; align-content: center; gap: 26px; padding: 24px; cursor: pointer; transition: opacity .7s ease, visibility .7s ease; }
 html.intro-done .intro { opacity: 0; visibility: hidden; }
 .intro-lion { width: min(62vmin, 400px); height: auto; overflow: visible; }
-.intro-net { filter: drop-shadow(0 0 3px rgba(248, 193, 62, .85)); animation: rs-out .6s ease forwards 3.4s; }
+.intro-net { filter: drop-shadow(0 0 3px rgba(248, 193, 62, .85)); animation: rs-out .9s ease forwards 2.75s; }
 .intro-net .node { fill: #FFE6A3; transform-box: fill-box; transform-origin: center; transform: scale(0); opacity: 0;
   animation: rs-node-in .38s cubic-bezier(.2, 1.6, .4, 1) forwards; animation-delay: calc(.15s + var(--d) * 28ms); }
 .intro-net .edge { fill: none; stroke: #F8C13E; stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1;
   animation: rs-draw .5s ease forwards; animation-delay: calc(.5s + var(--d) * 35ms); }
 .intro-facets polygon { opacity: 0; transform-box: fill-box; transform-origin: center; transform: scale(.55);
-  stroke: rgba(248, 193, 62, .18); stroke-width: .6; stroke-linejoin: round;
-  animation: rs-facet .45s cubic-bezier(.2, .9, .3, 1) forwards; animation-delay: calc(1.3s + var(--d) * 30ms); }
-.intro-facets { animation: rs-out .7s ease forwards 3.05s; }
-.intro-color { opacity: 0; transform-box: fill-box; transform-origin: center; transform: scale(.97); animation: rs-lion .8s ease forwards 2.85s; }
-@keyframes rs-lion { to { opacity: 1; transform: scale(1); } }
+  fill: url(#rs-lion-tex); stroke: url(#rs-lion-tex); stroke-width: 1.4; stroke-linejoin: round;
+  animation: rs-facet .45s cubic-bezier(.2, .9, .3, 1) forwards; animation-delay: calc(1.2s + var(--d) * 32ms); }
+.intro-facets { animation: rs-out .5s ease forwards 3.25s; }
+.intro-color { opacity: 0; transform-box: fill-box; transform-origin: center; animation: rs-lion .6s ease forwards 2.85s; }
+@keyframes rs-lion { to { opacity: 1; } }
 @keyframes rs-facet { to { opacity: 1; transform: scale(1); } }
 .intro-word { display: grid; gap: 8px; text-align: center; opacity: 0; transform: translateY(8px); animation: rs-rise .6s ease forwards 3.3s; }
 .intro-name { font-family: var(--display); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.5rem); color: #F2C14E; letter-spacing: .01em; }
