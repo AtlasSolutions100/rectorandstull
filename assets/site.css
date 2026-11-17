@@ -180,6 +180,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .scope-list > div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding: 11px 0; border-bottom: 1px solid var(--line); }
 .scope-list dt { color: var(--slate); padding-top: 2px; }
 .scope-list dd { margin: 0; color: var(--ink); }
+.case-note { margin: 0; color: var(--slate); font-size: .95em; }
 
 .tmu-media { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); grid-template-rows: auto auto; gap: 12px; padding: clamp(20px, 3vw, 36px); background: var(--mist); border-left: 1px solid var(--line); align-content: start; }
 .tmu-media figure { margin: 0; display: grid; gap: 8px; min-width: 0; align-content: start; }
